@@ -1,0 +1,23 @@
+
+  /* ข้อความวอเตอร์มาร์กเป็นเส้นขอบ */
+  .text-outline{ -webkit-text-stroke: 2px rgba(17,24,39,.08); color: transparent; }
+
+  /* blob floating */
+  @keyframes blob {
+    0%,100% { transform: translate(0,0) scale(1); }
+    33%     { transform: translate(20px,-10px) scale(1.06); }
+    66%     { transform: translate(-12px,14px) scale(0.98); }
+  }
+  .animate-blob{ animation: blob 14s infinite; }
+  .animation-delay-2000{ animation-delay: 2s; }
+  .animation-delay-4000{ animation-delay: 4s; }
+
+  /* fade-in-up */
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(14px) scale(.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .fade-up{ animation: fadeUp .8s cubic-bezier(.22,.61,.36,1) both; }
+  .delay-1{ animation-delay: .15s; }
+  .delay-2{ animation-delay: .3s; }
+

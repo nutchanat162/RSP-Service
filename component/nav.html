@@ -1,0 +1,89 @@
+
+<nav id="siteNav" class="fixed top-0 inset-x-0 z-50 bg-white/70 backdrop-blur-sm border-b border-gray-100 transition-all duration-300">
+  <div data-nav-inner class="max-w-6xl mx-auto px-6 py-4 transition-all duration-300">
+    <div class="flex justify-between items-center">
+      <!-- Brand -->
+      <a href="./index.html" class="flex items-center">
+        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center mr-3">
+          <span class="text-white font-bold text-sm">SPS</span>
+        </div>
+        <span class="text-xl font-semibold">อุทยานวิทยาศาสตร์ภาคใต้</span>
+      </a>
+
+      <!-- Desktop menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#about"    class="nav-link text-gray-600 hover:text-gray-900">เกี่ยวกับเรา</a>
+        <a href="#services" class="nav-link text-gray-600 hover:text-gray-900">บริการ</a>
+        <a href="#research" class="nav-link text-gray-600 hover:text-gray-900">งานวิจัย</a>
+        <a href="#contact"  class="nav-link text-gray-600 hover:text-gray-900">ติดต่อเรา</a>
+        <a href="#more"     class="nav-link text-gray-600 hover:text-gray-900">เพิ่มเติม</a>
+      </div>
+
+      <!-- Mobile button -->
+      <button id="menuBtn" class="md:hidden p-2 rounded-md border border-gray-200 text-gray-700" aria-label="เปิดเมนู">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-width="2" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="menuMobile" class="md:hidden hidden pt-3 space-y-2">
+      <a href="#about"    class="nav-link block text-gray-700 py-2">เกี่ยวกับเรา</a>
+      <a href="#services" class="nav-link block text-gray-700 py-2">บริการ</a>
+      <a href="#research" class="nav-link block text-gray-700 py-2">งานวิจัย</a>
+      <a href="#contact"  class="nav-link block text-gray-700 py-2">ติดต่อเรา</a>
+      <a href="#more"     class="nav-link block text-gray-700 py-2">เพิ่มเติม</a>
+    </div>
+  </div>
+</nav>
+
+<!-- กันเนื้อหาถูกบังด้วย navbar (spacer) -->
+<div class="h-16 md:h-20"></div>
+
+<script>
+(() => {
+  const nav   = document.getElementById('siteNav');
+  const inner = nav.querySelector('[data-nav-inner]');
+  const btn   = document.getElementById('menuBtn');
+  const mob   = document.getElementById('menuMobile');
+
+  // toggle เมนูมือถือ
+  btn?.addEventListener('click', () => mob.classList.toggle('hidden'));
+  mob?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mob.classList.add('hidden')));
+
+  // ย่อ/ขยาย navbar เมื่อสกอร์ล
+  const onScroll = () => {
+    if ((window.scrollY || document.documentElement.scrollTop) > 10) {
+      nav.classList.add('shadow-md','bg-white/90','backdrop-blur');
+      inner.classList.remove('py-4'); inner.classList.add('py-2');
+    } else {
+      nav.classList.remove('shadow-md','bg-white/90','backdrop-blur');
+      inner.classList.add('py-4'); inner.classList.remove('py-2');
+    }
+  };
+  onScroll(); window.addEventListener('scroll', onScroll, { passive:true });
+
+  // scrollspy: ไฮไลต์เมนูตาม section ที่อยู่ใน viewport
+  const links = [...document.querySelectorAll('.nav-link')];
+  const map = new Map(links.map(a => [a.getAttribute('href'), a]));
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      const link = map.get('#' + e.target.id);
+      if (!link) return;
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('text-gray-900','font-semibold','border-b-2','border-gray-900'));
+        link.classList.add('text-gray-900','font-semibold','border-b-2','border-gray-900');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0.01 });
+
+  ['about','services','research','contact','more'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) obs.observe(el);
+  });
+
+  // เลื่อนนุ่ม ๆ
+  document.documentElement.style.scrollBehavior = 'smooth';
+})();
+</script>

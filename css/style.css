@@ -1,0 +1,16 @@
+html{ scroll-behavior:smooth; }
+/* เผื่อ nav fixed สูง ~84-96px */
+html{ scroll-padding-top: 90px; }
+.section{ padding-block: 6rem; }
+@media (min-width:768px){ .section{ padding-block: 7rem; } }
+
+/* ตัวแบ่ง section แบบจาง ๆ */
+.sep{ height:56px; background:
+  radial-gradient(80% 100% at 50% -20%, rgba(79,133,195,.12), transparent 60%),
+  linear-gradient(to right, transparent, rgba(34,58,86,.06), transparent);
+  opacity:.6;
+}
+
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+        }

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อุทยานวิทยาศาสตร์ภาคใต้</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="bg-white text-gray-800">
+    <div id="nav"></div>
+
+    <!-- Hero Section -->
+    <section
+        class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+        <!-- decorative blobs -->
+        <div
+            class="pointer-events-none absolute -top-20 -left-20 w-80 h-80 rounded-full bg-gradient-to-tr from-emerald-200 to-cyan-200 blur-3xl opacity-60 animate-blob">
+        </div>
+        <div
+            class="pointer-events-none absolute -bottom-24 -right-16 w-96 h-96 rounded-full bg-gradient-to-tr from-indigo-200 to-sky-200 blur-3xl opacity-50 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="pointer-events-none absolute top-1/2 -translate-y-1/2 right-1/3 w-56 h-56 rounded-full bg-gradient-to-tr from-rose-200 to-orange-200 blur-3xl opacity-40 animate-blob animation-delay-4000">
+        </div>
+
+        <!-- watermark text -->
+        <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <h2 class="select-none uppercase tracking-[0.35em] text-5xl md:text-7xl font-extrabold text-outline">
+                Regional Science Park, South
+            </h2>
+        </div>
+
+        <!-- content -->
+        <div class="relative z-10 w-full max-w-6xl mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-gray-900 mb-6 leading-tight fade-up">
+                    ศูนย์กลางนวัตกรรม<br>
+                    <span class="bg-gradient-to-r from-gray-700 to-gray-400 bg-clip-text text-transparent">
+                        เพื่อการพัฒนาภาคใต้
+                    </span>
+                </h1>
+
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed fade-up delay-1">
+                    อุทยานวิทยาศาสตร์ภาคใต้ คือแหล่งรวมองค์ความรู้ นวัตกรรม และเทคโนโลยี
+                    เพื่อขับเคลื่อนการพัฒนาเศรษฐกิจและสังคมของภาคใต้อย่างยั่งยืน
+                </p>
+
+                <a href="#about" class="inline-flex items-center justify-center bg-gray-800 text-white px-8 py-3 rounded-lg
+                hover:bg-gray-900 transition-transform duration-200 group fade-up delay-2">
+                    เรียนรู้เพิ่มเติม
+                    <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- scroll hint -->
+        <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-gray-500" aria-label="เลื่อนลง">
+            <svg class="w-6 h-6 animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </a>
+    </section>
+
+
+
+<!-- Partners (enter-once) -->
+<section id="partners"
+  class="relative z-10 bg-white border-b border-slate-200">
+  <div class="max-w-6xl mx-auto px-3 md:px-6 py-3 md:py-4">
+    <ul class="grid grid-cols-3 md:grid-cols-6 gap-x-4 md:gap-x-6 gap-y-3 items-center justify-items-center partners">
+      <li class="partner" style="--d:0s"><img src="images/partners/p1.png" alt="Partner 1"></li>
+      <li class="partner" style="--d:.08s"><img src="images/partners/p2.png" alt="Partner 2"></li>
+      <li class="partner" style="--d:.16s"><img src="images/partners/p3.png" alt="Partner 3"></li>
+      <li class="partner" style="--d:.24s"><img src="images/partners/p4.png" alt="Partner 4"></li>
+      <li class="partner" style="--d:.32s"><img src="images/partners/p5.png" alt="Partner 5"></li>
+      <li class="partner" style="--d:.40s"><img src="images/partners/p6.png" alt="Partner 6"></li>
+      <!-- <li class="partner" style="--d:.48s"><img src="images/partners/p7.png" alt="Partner 7"></li>
+      <li class="partner" style="--d:.56s"><img src="images/partners/p8.png" alt="Partner 8"></li>
+      <li class="partner" style="--d:.64s"><img src="images/partners/p9.png" alt="Partner 9"></li> -->
+    </ul>
+  </div>
+</section>
+
+
+
+   <!-- About Section -->
+<!-- About Section – style like mock -->
+<section id="about" class="relative overflow-hidden py-24 bg-white">
+  <!-- LEFT scribble -->
+  <div class="pointer-events-none absolute inset-y-0 left-0 w-[220px] hidden md:block"
+       style="mask-image: linear-gradient(to right, #000 65%, transparent 100%); -webkit-mask-image: linear-gradient(to right, #000 65%, transparent 100%);">
+    <svg class="absolute left-0 top-1/2 -translate-y-1/2 w-[260px] opacity-30 about-deco-left"
+         viewBox="0 0 260 800" fill="none">
+      <!-- เส้นโค้งแบบเส้นประ -->
+      <path d="M30,0 C110,160 140,260 120,380 C95,520 70,640 110,800"
+            stroke="#4F85C3" stroke-width="10" stroke-linecap="round"
+            stroke-dasharray="36 26"/>
+      <!-- วงกลมเล็ก ๆ เน้น -->
+      <circle cx="36" cy="360" r="10" fill="#4F85C3"/>
+    </svg>
+  </div>
+
+  <!-- RIGHT zigzag -->
+  <div class="pointer-events-none absolute inset-y-0 right-0 w-[220px] hidden md:block"
+       style="mask-image: linear-gradient(to left, #000 65%, transparent 100%); -webkit-mask-image: linear-gradient(to left, #000 65%, transparent 100%);">
+    <svg class="absolute right-0 top-1/2 -translate-y-1/2 w-[260px] opacity-30 about-deco-right"
+         viewBox="0 0 260 800" fill="none">
+      <!-- เส้นฟ้ากรมแบบซิกแซก -->
+      <polyline points="10,760 90,640 40,540 160,420 60,320 200,180 120,80 240,0"
+                stroke="#223A56" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 relative">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <!-- text -->
+      <div class="reveal" data-reveal>
+        <h2 class="text-3xl font-bold text-[#0F172A] mb-6 relative inline-block">
+          เกี่ยวกับเรา
+          <span class="absolute -bottom-2 left-0 w-16 h-1 bg-[#4F85C3]/80 rounded"></span>
+        </h2>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          เราตั้งใจที่จะเป็นแหล่งรวมความรู้และนวัตกรรม เพื่อสร้างโอกาสทางธุรกิจ
+          พัฒนาบุคลากร และยกระดับคุณภาพชีวิตของประชาชนในภาคใต้
+        </p>
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+          ด้วยการบูรณาการความร่วมมือระหว่างหน่วยงานภาครัฐ ภาคเอกชน สถาบันการศึกษา
+          และชุมชน เพื่อสร้างระบบนิเวศนวัตกรรมที่แข็งแกร่ง
+        </p>
+        <a href="#contact"
+           class="inline-flex items-center bg-[#4F85C3] hover:bg-[#335A89] text-white px-6 py-3 rounded-lg transition-colors">
+          ติดต่อเรา
+          <svg class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- visual card -->
+      <div class="reveal" data-reveal>
+        
+        <img src="images/pic/plan.png" alt="About Us" class="w-full h-full object-cover rounded-3xl">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="relative overflow-hidden py-24 bg-white">
+  <!-- BG FX (ชั้นหลังสุด) -->
+  <div aria-hidden="true" class="absolute inset-0 pointer-events-none">
+    <div class="svc-mesh"></div>
+    <div class="svc-grid"></div>
+    <div class="svc-blob svc-blob-a"></div>
+    <div class="svc-blob svc-blob-b"></div>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-[#0F172A] mb-4">บริการของเรา</h2>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+        ครอบคลุมทุกด้านของการพัฒนานวัตกรรมและเทคโนโลยี
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="card-wrap group">
+        <a href="services/innovation.html" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4F85C3]">
+          <div class="card h-[280px]">
+            <!-- front -->
+            <div class="face front absolute inset-0 bg-white p-8 rounded-none border border-slate-200 shadow-sm">
+              <div class="w-12 h-12 bg-[#4F85C3]/10 text-[#4F85C3] flex items-center justify-center mb-6">💡</div>
+              <h3 class="text-xl font-semibold text-[#0F172A] mb-3">พัฒนานวัตกรรม</h3>
+              <p class="text-slate-600">ให้คำปรึกษาตั้งแต่ไอเดียสู่เชิงพาณิชย์</p>
+            </div>
+            <!-- back -->
+            <div class="face back absolute inset-0 bg-white p-8 rounded-none border border-[#4F85C3]/30 shadow-sm">
+              <h3 class="text-xl font-semibold text-[#0F172A] mb-3">สรุปบริการ</h3>
+              <ul class="text-slate-600 space-y-2 list-disc pl-5">
+                <li>โค้ช/เมนทอร์ด้านนวัตกรรม</li>
+                <li>ออกแบบต้นแบบ (Prototype)</li>
+                <li>เตรียมขึ้นตลาด</li>
+              </ul>
+              <span class="absolute bottom-4 right-5 text-[#335A89] font-medium">ดูรายละเอียด →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-wrap group">
+        <a href="services/lab.html" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4F85C3]">
+          <div class="card h-[280px]">
+            <div class="face front absolute inset-0 bg-white p-8 rounded-none border border-slate-200 shadow-sm">
+              <div class="w-12 h-12 bg-[#4F85C3]/10 text-[#4F85C3] flex items-center justify-center mb-6">🔬</div>
+              <h3 class="text-xl font-semibold text-[#0F172A] mb-3">ห้องปฏิบัติการ</h3>
+              <p class="text-slate-600">เครื่องมือทันสมัย ทีมผู้เชี่ยวชาญเฉพาะทาง</p>
+            </div>
+            <div class="face back absolute inset-0 bg-white p-8 rounded-none border border-[#4F85C3]/30 shadow-sm">
+              <h3 class="text-xl font-semibold text-[#0F172A] mb-3">สรุปบริการ</h3>
+              <ul class="text-slate-600 space-y-2 list-disc pl-5">
+                <li>ทดสอบ/วิเคราะห์มาตรฐาน</li>
+                <li>จองคิวใช้งานห้องแลบ</li>
+                <li>ที่ปรึกษาด้านมาตรฐาน</li>
+              </ul>
+              <span class="absolute bottom-4 right-5 text-[#335A89] font-medium">ดูรายละเอียด →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-wrap group">
+        <a href="services/incubation.html" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4F85C3]">
+          <div class="card h-[280px]">
+            <div class="face front absolute inset-0 bg-white p-8 rounded-none border border-slate-200 shadow-sm">
+              <div class="w-12 h-12 bg-[#4F85C3]/10 text-[#4F85C3] flex items-center justify-center mb-6">🏭</div>
+              <h3 class="text-xl font-semibold text-[#0F172A] mb-3">บ่มเพาะธุรกิจ</h3>
+              <p class="text-slate-600">ยกระดับผู้ประกอบการด้วยเทคโนโลยี</p>
+            </div>
+            <div class="face back absolute inset-0 bg-white p-8 rounded-none border border-[#4F85C3]/30 shadow-sm">
+              <h3 class="text-xl font-semibold text-[#0F172A] mb-3">สรุปบริการ</h3>
+              <ul class="text-slate-600 space-y-2 list-disc pl-5">
+                <li>วางแผนธุรกิจ/การเงิน</li>
+                <li>คำปรึกษากฎหมาย/ทรัพย์สินฯ</li>
+                <li>เชื่อมเครือข่าย/ทุน</li>
+              </ul>
+              <span class="absolute bottom-4 right-5 text-[#335A89] font-medium">ดูรายละเอียด →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Research Areas (Single-line timeline) -->
+<section id="research" class="relative overflow-hidden py-20 bg-white">
+  <!-- BG: network dots + faint mesh -->
+  <div aria-hidden="true" class="absolute inset-0 pointer-events-none research-net"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14" data-reveal>
+      <h2 class="text-4xl font-bold text-[#0F172A] mb-3">สาขาการวิจัย</h2>
+      <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+        เน้นการวิจัยที่ตอบสนองความต้องการของภาคใต้
+      </p>
+    </div>
+
+    <!-- เส้นเดียว แถวเดียว -->
+    <ol class="timeline" data-reveal>
+      <li class="tl-item">
+        <div class="tl-body">
+          <div class="tl-title">
+            <span class="tl-emoji" aria-hidden="true">🌾</span>
+            เกษตรและอาหาร
+          </div>
+          <p class="tl-desc">เทคโนโลยีการเกษตรยั่งยืน เพิ่มประสิทธิภาพและคุณภาพอาหาร</p>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-body">
+          <div class="tl-title">
+            <span class="tl-emoji" aria-hidden="true">🏥</span>
+            สุขภาพและการแพทย์
+          </div>
+          <p class="tl-desc">นวัตกรรมการแพทย์และสุขภาพชุมชนภาคใต้</p>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-body">
+          <div class="tl-title">
+            <span class="tl-emoji" aria-hidden="true">🌊</span>
+            ทรัพยากรทางทะเล
+          </div>
+          <p class="tl-desc">การใช้ประโยชน์จากทะเลและชายฝั่งอย่างยั่งยืน</p>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-body">
+          <div class="tl-title">
+            <span class="tl-emoji" aria-hidden="true">♻️</span>
+            พลังงานสะอาด
+          </div>
+          <p class="tl-desc">เทคโนโลยีพลังงานทดแทนและสิ่งแวดล้อม</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+
+
+    <!-- Key Features -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="bg-gray-100 rounded-2xl p-12 h-96 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <span class="text-4xl">📊</span>
+                        </div>
+                        <p class="text-gray-500">พื้นที่สำหรับรูปภาพหรือกราฟิก</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                        จุดเด่นของเรา
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div
+                                class="w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">ทีมผู้เชี่ยวชาญระดับสูง</h3>
+                                <p class="text-gray-600">นักวิจัยและนักวิทยาศาสตร์ที่มีประสบการณ์สูง</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">อุปกรณ์ทันสมัย</h3>
+                                <p class="text-gray-600">เครื่องมือและอุปกรณ์วิจัยที่ล้ำสมัย</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">เครือข่ายความร่วมมือ</h3>
+                                <p class="text-gray-600">ความร่วมมือกับสถาบันชั้นนำทั่วโลก</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+<section class="section bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16" data-reveal>
+      <h2 class="text-4xl font-bold text-ink mb-4">ผลงานของเรา</h2>
+      <p class="text-xl text-slate-600">ตัวเลขที่แสดงถึงความสำเร็จ</p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="p-6" data-reveal>
+        <div class="count text-5xl font-bold text-primary-900 mb-3" data-to="50"  data-suffix="+"></div>
+        <p class="text-slate-600 font-medium">โครงการวิจัย</p>
+      </div>
+      <div class="p-6" data-reveal>
+        <div class="count text-5xl font-bold text-primary-900 mb-3" data-to="1200" data-suffix="+"></div>
+        <p class="text-slate-600 font-medium">นักวิจัย</p>
+      </div>
+      <div class="p-6" data-reveal>
+        <div class="count text-5xl font-bold text-primary-900 mb-3" data-to="100" data-suffix="+"></div>
+        <p class="text-slate-600 font-medium">องค์กรพันธมิตร</p>
+      </div>
+      <div class="p-6" data-reveal>
+        <div class="count text-5xl font-bold text-primary-900 mb-3" data-to="5" data-suffix="+"></div>
+        <p class="text-slate-600 font-medium">ปีประสบการณ์</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="sep"></div>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">เสียงจากพันธมิตร</h2>
+                <p class="text-xl text-gray-600">ความคิดเห็นจากผู้ที่ร่วมงานกับเรา</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "การทำงานร่วมกับอุทยานวิทยาศาสตร์ภาคใต้ช่วยให้เราพัฒนาผลิตภัณฑ์ใหม่ได้สำเร็จ
+                        และเข้าสู่ตลาดได้อย่างรวดเร็ว"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <p class="font-semibold text-gray-900">คุณสมชาย วิทยา</p>
+                            <p class="text-sm text-gray-500">ผู้อำนวยการ บริษัท ABC</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "ห้องปฏิบัติการที่ทันสมัยและทีมงานที่เชี่ยวชาญ
+                        ทำให้งานวิจัยของเราประสบความสำเร็จตามเป้าหมาย"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <p class="font-semibold text-gray-900">ผศ.ดร.สุดา นวัตกรรม</p>
+                            <p class="text-sm text-gray-500">มหาวิทยาลัยสงขลานครินทร์</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "การสนับสนุนจากอุทยานฯ ช่วยให้เราสามารถพัฒนาเทคโนโลงีใหม่
+                        และสร้างมูลค่าเพิ่มให้กับผลิตภัณฑ์เกษตร"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <p class="font-semibold text-gray-900">คุณมานิต เกษตรกร</p>
+                            <p class="text-sm text-gray-500">เกษตรกรผู้ประกอบการ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">ติดต่อเรา</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1">
+                                <span class="text-xs">📍</span>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">ที่อยู่</p>
+                                <p class="text-gray-600">123 ถนนวิทยาศาสตร์<br>หาดใหญ่ สงขลา 90110</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1">
+                                <span class="text-xs">📞</span>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">โทรศัพท์</p>
+                                <p class="text-gray-600">(074) 456-7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1">
+                                <span class="text-xs">✉️</span>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">อีเมล</p>
+                                <p class="text-gray-600">info@sciencepark-south.th</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">เวลาทำการ</h3>
+                        <div class="space-y-2 text-gray-600">
+                            <p>จันทร์ - ศุกร์: 8:00 - 17:00 น.</p>
+                            <p>เสาร์: 9:00 - 16:00 น.</p>
+                            <p>อาทิตย์: ปิด</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">ส่งข้อความถึงเรา</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">ชื่อ-นามสกุล</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">อีเมล</label>
+                            <input type="email"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">หัวข้อ</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">ข้อความ</label>
+                            <textarea rows="4"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button
+                            class="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900 transition-colors font-medium">
+                            ส่งข้อความ
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+<style>
+  /* เผยตัวนุ่ม ๆ */
+  @keyframes fadeUp { from {opacity:0; transform: translateY(14px)} to {opacity:1; transform:none} }
+  .reveal{ opacity:0; transform: translateY(14px); }
+  .reveal.show{ animation: fadeUp .7s cubic-bezier(.22,.61,.36,1) both; }
+
+  /* พารัลแลกซ์เส้นข้าง ๆ + dash เคลื่อนเบา ๆ */
+  @keyframes dashMove { to { stroke-dashoffset: -200; } }
+  .about-deco-left path { animation: dashMove 24s linear infinite; }
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; }
+    .about-deco-left path{ animation:none; }
+  }
+
+  /* ====== Flip Card ====== */
+  .card-wrap{ perspective: 1200px; }
+  .card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .6s cubic-bezier(.22,.61,.36,1), box-shadow .3s;
+  }
+  .card-wrap:hover .card,
+  .card-wrap:focus-within .card{ transform: rotateY(180deg); }
+  .face{ backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+  .back{ transform: rotateY(180deg); }
+  .card-wrap:hover .card{ box-shadow: 0 18px 40px rgba(34,58,86,.08); }
+
+  /* ลด motion */
+  @media (prefers-reduced-motion: reduce){
+    .card{ transition: none; }
+    .card-wrap:hover .card,
+    .card-wrap:focus-within .card{ transform: none; }
+  }
+
+  /* ====== Background FX (ชั้นหลังสุด) ====== */
+  /* 1) mesh ไล่เฉดอ่อน */
+  .svc-mesh{
+    position:absolute; inset:-20% -10% -15% -10%;
+    background:
+      radial-gradient(900px 600px at 15% 25%, rgba(79,133,195,.10), transparent 60%),
+      radial-gradient(900px 600px at 85% 75%, rgba(34,58,86,.10), transparent 60%),
+      linear-gradient(to bottom right, #f7fbff, #ffffff 40%, #f3f6fa);
+    animation: svc-mesh-pan 32s linear infinite;
+    mask-image: radial-gradient(1200px 800px at 50% 50%, #000 70%, transparent 100%);
+  }
+  @keyframes svc-mesh-pan{
+    0%,100%{ background-position: 0% 0%, 100% 100%, 0% 0%; }
+    50%    { background-position: 25% 10%, 75% 90%, 0% 0%; }
+  }
+
+  /* 2) grid line จาง ๆ */
+  .svc-grid{
+    position:absolute; inset:0;
+    background:
+      repeating-linear-gradient(0deg, rgba(15,23,42,.05) 0 1px, transparent 1px 40px),
+      repeating-linear-gradient(90deg, rgba(15,23,42,.05) 0 1px, transparent 1px 40px);
+    mask-image: linear-gradient(to bottom, transparent, #000 15% 85%, transparent);
+  }
+
+  /* 3) blobs ลอยเบา ๆ */
+  .svc-blob{
+    position:absolute; border-radius:9999px; filter: blur(30px); opacity:.35;
+    will-change: transform;
+  }
+  .svc-blob-a{
+    width:28rem;height:28rem; left:-8rem; top:-6rem;
+    background: radial-gradient(closest-side, rgba(79,133,195,.30), transparent 70%);
+    animation: svc-blob 18s ease-in-out infinite;
+  }
+  .svc-blob-b{
+    width:30rem;height:30rem; right:-10rem; bottom:-8rem;
+    background: radial-gradient(closest-side, rgba(34,58,86,.25), transparent 70%);
+    animation: svc-blob 22s ease-in-out infinite 2s;
+  }
+  @keyframes svc-blob{
+    0%,100%{ transform: translate(0,0) scale(1); }
+    50%    { transform: translate(18px,-14px) scale(1.04); }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .svc-mesh,.svc-blob{ animation: none!important; }
+  }
+
+.partners img{
+  display:block;
+  height:clamp(56px, 6vw, 88px);
+  width:auto; object-fit:contain;
+  filter:none;            
+  opacity:1;            
+  transition:transform .3s, filter .3s, opacity .3s;
+}
+
+
+.partners img:hover{
+  transform: translateY(-2px);
+}
+@keyframes partner-in{ to{ opacity:1; transform:none; } }
+/* BG: network dots + mesh อ่อน ๆ */
+.research-net{
+  background:
+    radial-gradient(rgba(15,23,42,.06) 1px, transparent 1.2px), /* dots */
+    radial-gradient(900px 600px at 15% 20%, rgba(79,133,195,.10), transparent 60%),
+    radial-gradient(900px 600px at 85% 80%, rgba(34,58,86,.10), transparent 60%),
+    linear-gradient(#ffffff,#ffffff);
+  background-size: 24px 24px, auto, auto, auto;
+  background-position: 0 0, 0 0, 100% 100%, 0 0;
+  mask-image: radial-gradient(1200px 700px at 50% 0%, #000 70%, transparent 100%);
+  opacity:.6;
+}
+
+/* Timeline 2 คอลัมน์ */
+.timeline{ position:relative; margin:0; padding:0; list-style:none; }
+.timeline::before{
+  content:""; position:absolute; left:26px; top:0; bottom:0; width:2px;
+  background: linear-gradient(to bottom, rgba(79,133,195,.45), rgba(34,58,86,.45));
+  mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+}
+.tl-item{ position:relative; }
+.tl-item + .tl-item{ margin-top:1rem; }
+
+.tl-item::before{
+  /* node บนเส้น */
+  content:""; position:absolute; left:18px; top:1rem; width:16px; height:16px; border-radius:9999px;
+  background:#fff; border:3px solid #4F85C3; box-shadow:0 0 0 3px rgba(79,133,195,.15);
+}
+
+.tl-body{
+  margin-left:3.5rem; /* ระยะจากเส้น */
+  padding:1rem 1rem 1rem 1rem;
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+  border:1px solid rgba(15,23,42,.12);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(34,58,86,.06);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.tl-item:hover .tl-body{
+  transform: translateY(-3px);
+  border-color: rgba(79,133,195,.55);
+  box-shadow: 0 16px 36px rgba(34,58,86,.10);
+}
+
+.tl-title{
+  display:flex; align-items:center; gap:.5rem;
+  font-weight: 700; color:#0F172A; margin-bottom:.25rem;
+}
+.tl-emoji{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:28px; height:28px; border-radius:9999px;
+  background: rgba(79,133,195,.10); color:#4F85C3;
+  font-size:18px;
+}
+.tl-desc{ color:#64748b; font-size:.95rem; }
+
+/* Mobile: เส้นไม่ต้องยาวเกินไป */
+@media (max-width: 767px){
+  .timeline::before{ left:22px; }
+  .tl-item::before{ left:14px; }
+  .tl-body{ margin-left:3rem; }
+}
+
+/* เคารพ reduce motion */
+@media (prefers-reduced-motion: reduce){
+  .tl-item:hover .tl-body{ transform:none; box-shadow: 0 10px 24px rgba(34,58,86,.06); }
+}
+
+
+
+</style>
+<script>
+  // reveal เมื่อเข้าจอ
+  const io = new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target);} });
+  }, { threshold:.12 });
+  document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+
+  // parallax นิด ๆ ให้เส้นซ้าย/ขวาขยับตามสกอร์ล
+  const L = document.querySelector('.about-deco-left');
+  const R = document.querySelector('.about-deco-right');
+  let raf;
+  const onScroll = () => {
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(()=>{
+      const y = (window.scrollY || document.documentElement.scrollTop) * 0.06;
+      if (L) L.style.transform = `translateY(calc(-50% + ${y}px))`;
+      if (R) R.style.transform = `translateY(calc(-50% - ${y}px))`;
+    });
+  };
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  // ===== Count-up on view =====
+  const formatNumber = n => n.toLocaleString('th-TH'); // หลักพัน
+  const counters = document.querySelectorAll('.count');
+
+  const ioCount = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(!entry.isIntersecting) return;
+      const el = entry.target;
+      const end = parseFloat(el.dataset.to ?? '0');
+      const dur = parseInt(el.dataset.duration ?? '1000', 10); // ms
+      const suffix = el.dataset.suffix ?? '';
+      const start = 0;
+      const t0 = performance.now();
+
+      function tick(t){
+        const p = Math.min(1, (t - t0) / dur);
+        // easeOutCubic
+        const e = 1 - Math.pow(1 - p, 3);
+        const val = Math.round(start + (end - start) * e);
+        el.textContent = formatNumber(val) + suffix;
+        if(p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      ioCount.unobserve(el);
+    });
+  }, { threshold: .25 });
+
+  counters.forEach(el => ioCount.observe(el));
+</script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
